@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script defer 
+    src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"
+    integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9"
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <div>
+        <a href="../games.html"><i class="fas fa-arrow-left go-back"></i></a>
+    </div>
+    <form id="container">
+        <h1 id="title">Choose Your Weapon</h1>
+        <div id="select">
+            <img src="images/rock.png" alt="Rock" id="rock" class="margin" width="250" height="250">
+            <img src="images/paper.png" alt="Paper" id="paper" class="margin" width="250" height="250">
+            <img src="images/scissors.jpeg" alt="Scissors" id="scissors" class="margin" width="250" height="250">
+        </div>
+        <div id="bot">
+            <img src="images/rock.png" alt="Rock" id="botrock" class="hide margin" width="250" height="250">
+            <img src="images/paper.png" alt="Paper" id="botpaper" class="hide margin" width="250" height="250">
+            <img src="images/scissors.jpeg" alt="Scissors" id="botscissors" class="hide margin" width="250" height="250">
+        </div>
+        <div id="result">
+            <h2 id="win" class="hide">You win!</h2>
+            <h2 id="lose" class="hide">You lose!</h2>
+            <h2 id="tie" class="hide">You tied!</h2>
+        </div>
+        <div>
+            <button type="button" id="replay" class="hide">Play again?</button>
+        </div>
+    </form>
+
+    <table id="scorecard">
+        <tr>
+            <th id="name"></th>
+            <th>Computer</th>
+            <th>Draws</th>
+        </tr>
+
+        <tr>
+            <td><span id="wins">0</span></td>
+            <td><span id="losses">0</span></td>
+            <td><span id="draws">0</span></td>
+        </tr>
+    </table>
+
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
